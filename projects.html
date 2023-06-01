@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranay Gupta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="android-chrome-512x512.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+    </header>
+    <section id="projects">
+        <h1>My Projects</h1>
+        <p>Here are some of the projects I've worked on:</p>
+        <!-- Project card -->
+        <!-- Project card -->
+
+        <div class="project-card">
+            <!-- Front of the card -->
+
+            <div class="card-front">
+                <!-- Project details -->
+                <div class="project-details">
+                    <!-- Project title -->
+                    <a href="https://www.thrive-track.com/" title="ThriveTrack" target="_blank">
+                        <h2 class="project-title">ThriveTrack</h2>
+                    </a>
+
+                    <!-- Project description -->
+                    <p class="project-description">ThriveTrack is an innovative health and wellness application that
+                        integrates personalized fitness and nutrition planning with a vibrant community platform. While
+                        building ThriveTrack, I'm mastering several key technical skills, such as React Native for
+                        mobile app development, HTML, CSS, and JavaScript for web development. I'm also leveraging
+                        frameworks like Node.js for backend development and learning to utilize APIs for integrating
+                        third-party services. Additionally, I'm honing skills in UI/UX design, agile project management,
+                        and strategic decision-making as a tech entrepreneur.</p>
+                </div>
+                <!-- Project image -->
+
+                <img class="project-image" src="Screenshot 2023-04-10 at 12.31.48 PM.png" alt="Project image">
+
+                <div class="flip-arrow">Click to see an example →</div>
+            </div>
+
+            <!-- Back of the card -->
+            <div class="card-back">
+                <div class="back-content">
+                    <!-- Left side -->
+                    <div class="back-left">
+                        <img src="home.png" alt="ThriveTrack App Page">
+                        <img src="workout.png" alt="ThriveTrack App Page">
+                    </div>
+
+                    <!-- Right side -->
+                    <div class="back-right">
+                        <img src="recipe.png" alt="ThriveTrack App Page">
+                        <img src="FoodScreenShot.png" alt="ThriveTrack App Page">
+                    </div>
+                </div>
+                <div class="flip-arrow">→</div>
+
+            </div>
+        </div>
+
+        <div class="project-card">
+            <!-- Front of the card -->
+
+            <div class="card-front">
+                <!-- Project details -->
+                <div class="project-details">
+                    <!-- Project title -->
+                    <h2 class="project-title">Stock Market Simulator</h2>
+                    <!-- Project description -->
+                    <p class="project-description">In my EECS 281 course, I tackled a C++ project on priority queues,
+                        specifically binary and pairing heaps. I created a templated priority queue class and tested it
+                        with a custom driver program. This project deepened my understanding of data structures,
+                        algorithms, and their performance. A key highlight was implementing a "streaming algorithm" for
+                        a "movie watcher mode", similar to a stock market simulation. This algorithm, which only
+                        processes each input once without storing it, taught me about the complexities of real-time data
+                        processing and decision-making.</p>
+                </div>
+
+
+                <div class="flip-arrow">→</div>
+            </div>
+
+            <!-- Back of the card -->
+            <div class="card-back">
+                <div class="back-content">
+                    <!-- Left side -->
+                    <div class="back-left">
+                        <p>Example input:<br><br><br>
+                            <font size="-1">
+                                COMMENT: DL mode generating some transactions.<br>
+                                MODE: DL<br>
+                                NUM_TRADERS: 3<br>
+                                NUM_STOCKS: 2<br>
+                                0 TRADER T0 S1 B100 #44<br>
+                                1 TRADER T0 S1 B56 #42<br>
+                                2 BEAR T0 S1 S73 #19<br>
+                                2 BEAR T0 S0 S34 #50<br>
+                                2 TRADER T0 S0 B86 #23<br>
+                                2 TRADER T0 S0 B20 #39<br>
+                                2 BEAR T2 S0 S49 #24<br>
+                                2 TRADER T2 S0 B83 #45<br>
+                                3 TRADER T2 S1 B64 #22<br>
+                                3 TRADER T1 S0 B6 #19<br>
+                                3 TRADER T0 S1 B42 #37<br>
+                                4 TRADER T2 S0 B10 #44<br>
+                        </p>
+                        </font>
+                    </div>
+
+                    <!-- Right side -->
+                    <div class="back-right">
+                        <img id="uniqueImage" src="p2Example.png">
+                    </div>
+                </div>
+                <div class="flip-arrow">→</div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <!-- Front of the card -->
+
+            <div class="card-front">
+                <!-- Project details -->
+                <div class="project-details">
+                    <!-- Project title -->
+                    <h2 class="project-title">SQL Database</h2>
+                    <!-- Project description -->
+                    <p class="project-description">During my EECS 281 course at the University of Michigan, I
+                        implemented
+                        Project 3 - "SillyQL", where I developed a program simulating a basic relational database. This
+                        project involved implementing multiple data structures and handling various commands such as
+                        CREATE, QUIT, REMOVE, INSERT, PRINT, DELETE, JOIN, and GENERATE. It allowed me to refine my
+                        skills in selecting appropriate data structures, evaluating runtime and storage trade-offs,
+                        designing algorithms, and managing larger data structures through composition. This experience
+                        significantly enhanced my understanding of database management and query languages, equipping me
+                        with practical skills for real-world applications in computer science.</p>
+                </div>
+
+
+                <div class="flip-arrow">→</div>
+            </div>
+
+            <!-- Back of the card -->
+            <div class="card-back">
+                <div class="back-content">
+                    <!-- Left side -->
+                    <div class="back-left">
+                        <p id="p3"> Example Input: <br><br>
+                            CREATE pets 3 string bool bool Name likes_cats? likes_dogs?<br><br>
+                            INSERT INTO pets 2 ROWS<br><br>
+                            Sith true true<br><br>
+                            Paoletti true false<br><br>
+                            JOIN pets AND 281class WHERE Name = person AND PRINT 3 Name 1 emotion 2 likes_dogs? 1</p>
+                    </div>
+
+                    <!-- Right side -->
+                    <div class="back-right">
+                        <p id="p3"> Example Output: <br><br>
+                            Name emotion likes_dogs? <br><br>
+                            Sith happy true <br><br>
+                            Sith victorious true <br><br>
+                            Paoletti stressed false<br><br>
+                            Printed 3 rows from joining pets to 281class</p>
+                    </div>
+                </div>
+                <div class="flip-arrow">→</div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <!-- Front of the card -->
+
+            <div class="card-front">
+                <!-- Project details -->
+                <div class="project-details">
+                    <!-- Project title -->
+                    <h2 class="project-title">Pokemon TSP</h2>
+                    <!-- Project description -->
+                    <p class="project-description">During my EECS 281 course, I implemented Project 4 - "Pokemon", which
+                        involved solving graph-based problems. The project was divided into three parts: calculating a
+                        Minimum Spanning Tree (MST), approximating a solution to the Travelling Salesperson Problem
+                        (TSP), and determining the weight of an optimal TSP solution using a branch and bound algorithm.
+                        This project allowed me to refine my skills in implementing MST algorithms, determining the
+                        efficiency of Prim’s Algorithm versus Kruskal’s Algorithm, developing a bounding algorithm for
+                        the TSP, and exploring heuristic approaches for nearly-optimal solutions. This experience
+                        significantly enhanced my understanding of graph-based problems and their real-world
+                        applications.</p>
+                </div>
+
+
+                <div class="flip-arrow">→</div>
+            </div>
+
+            <!-- Back of the card -->
+            <div class="card-back">
+                <div class="back-content">
+                    <!-- Left side -->
+                    <div class="back-left">
+                        <p id="p3">Example Input:<br><br>
+                            5<br><br>
+                            6 1<br><br>
+                            2 3<br><br>
+                            -5 -4<br><br>
+                            -1 6<br><br>
+                            0 -1</p>
+                    </div>
+
+                    <!-- Right side -->
+                    <div class="back-right">
+                        <p id="p3">Example Output:<br><br>
+                            31.64<br>
+                            0 4 2 3 1</p>
+                    </div>
+                </div>
+                <div class="flip-arrow">→</div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <!-- Front of the card -->
+
+            <div class="card-front">
+                <!-- Project details -->
+                <div class="project-details">
+                    <!-- Project title -->
+                    <h2 class="project-title">Euchre</h2>
+                    <!-- Project description -->
+                    <p class="project-description">In the EECS 280 course, I completed Project 3 - "Euchre", which
+                        involved implementing a simplified version of the card game Euchre. This project allowed me to
+                        apply and deepen my understanding of object-oriented programming concepts, including classes,
+                        objects, and inheritance. I developed several classes representing different components of the
+                        game, such as the Card, Deck, Player, and Game classes. Through this project, I honed my skills
+                        in managing complex interactions between different objects and learned the importance of
+                        thorough testing in ensuring the correct functionality of my code. This experience significantly
+                        enhanced my understanding of object-oriented programming and its practical applications.</p>
+                </div>
+
+
+                
+            </div>
+        </div>
+
+
+    </section>
+    <button id="backToTopBtn" onclick="topFunction()">↑</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll('.project-card');
+
+            cards.forEach(card => {
+                // Flip to the back
+                card.querySelector('.card-front .flip-arrow').addEventListener('click', function (event) {
+                    event.stopPropagation();
+                    card.classList.add('flipped');
+                });
+
+                // Flip back to the front
+                card.querySelector('.card-back .flip-arrow').addEventListener('click', function (event) {
+                    event.stopPropagation();
+                    card.classList.remove('flipped');
+                });
+            });
+        });
+
+        // Get the button
+        var mybutton = document.getElementById("backToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+
+</body>
+
+</html>

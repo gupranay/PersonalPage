@@ -1,0 +1,459 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 600% 600%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  line-height: 1.6;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bio {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bio h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.bio p {
+  font-size: 1.2em;
+  color: #666;
+  margin-top: 10px;
+}
+
+.bio p:first-child {
+  font-size: 1.5em;
+  color: #333;
+  font-weight: bold;
+}
+
+
+
+
+header {
+  position: sticky;
+  background-color: black;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px 20px;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+div {
+  background-color: transparent;
+}
+
+header h1 {
+  color: white;
+  font-size: 1.8rem;
+}
+
+nav {
+  position: sticky;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+nav a {
+  position: sticky;
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+section {
+  background-color: transparent;
+  padding: 50px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 960px) {
+  header {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  nav {
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+}
+
+.main {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  margin-top: 80px;
+  /* adjust this value as needed */
+}
+
+.up {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  background-color: inherit;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.resume {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: black;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: black;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+}
+
+svg {
+  background-color: transparent;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.linkedin {
+  margin-top: -.3em;
+  margin-left: -0.9em;
+  fill: black;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #7bc990;
+}
+
+.card1:hover .resume {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .linkedin {
+  fill: white;
+}
+
+.introduction-card {
+  margin-top: 100px;
+  /* Adds space between the links and the introduction card */
+  padding: 20px;
+  background-color: black;
+  border-radius: 10px;
+  text-align: center;
+  /* Centers the text */
+}
+
+
+
+.introduction-card h2 {
+  margin-top: 10px;
+  color: white;
+}
+
+.introduction-card p {
+  color: white;
+}
+
+#projects {
+  text-align: center;
+}
+
+#projects h1 {
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#projects p {
+  color: white;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Project card styles */
+.project-card {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px; 
+  position: relative;
+  width: 100%; 
+  height: 400px;
+  perspective: 1000px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card-front,
+.card-back {
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #94bdff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-back {
+  background-color: #94bdff;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.project-card.flipped {
+  transform: rotateY(180deg);
+}
+
+
+.project-card img {
+  width: 50%;
+  height: 50%;
+  margin-right: 10px;
+}
+
+.project-card p {
+  margin: 10px;
+  text-decoration: none;
+}
+
+.project-card h2 {
+
+  margin-top: -30px;
+  margin-left: 10px;
+  color: black;
+  text-decoration: none;
+}
+.project-card a {
+  text-decoration: none;
+}
+
+.project-card h2:hover {
+  color: #007bff;
+}
+
+.flip-arrow {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  /* You can customize the rest (color, size, etc.) as needed */
+}
+
+/* When the card is flipped, rotate it 180 degrees */
+.project-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.project-title {
+  margin-bottom: 5px; /* Adjust according to your preference */
+}
+
+.card-back .back-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-back .back-left,
+.card-back .back-right {
+  width: 48%;
+  display: flex;
+  align-items: center; /* Center child elements vertically */
+  justify-content: center; /* Center child elements horizontally */
+}
+
+.card-back .back-left,
+.card-back .back-right p {
+  margin-top: 8px;
+  line-height: 1em;
+}
+
+
+
+.card-back .back-left img,
+.card-back .back-right img {
+  margin: 25px;
+  width: auto;  /* Adjust the width automatically to maintain the aspect ratio */
+  height: 350px;  /* Set the height to be 80% of the parent container */
+  object-fit: contain; /* Ensures the image scales properly and doesn't get stretched or squished */
+  
+}
+
+#uniqueImage {
+  width: auto;
+  height: 350px;
+  object-fit: cover;  /* You can adjust this value according to your needs */
+}
+
+#backToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#backToTopBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Add animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+#backToTopBtn {
+  animation: bounce 2s infinite;
+}
+
+#p3 {
+  margin-top: 80px;
+}
